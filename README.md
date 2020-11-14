@@ -16,7 +16,7 @@
 
 |Column            |Type      |Options                     |
 |------------------|----------|----------------------------|
-|answer            |integer   |null:false                  |
+|answer_count      |integer   |null:false                  |
 |user_id           |references|null:false, foreign_key:true|
 
 ### Association
