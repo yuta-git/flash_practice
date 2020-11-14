@@ -1,0 +1,31 @@
+[top_describe_app]
+descriptions/index
+--
+click SignIn
+==> SignIn
+
+[SignIn]
+--
+submit
+==> mypage
+
+[put_questions]
+results/news
+--
+click result
+==> mypage
+
+[sentences]
+sentences/news
+--
+click put_questions
+==> put_questions
+
+[mypage]
+users/show
+--
+click index_result
+==>index_result
+
+[index_result]
+results/index
