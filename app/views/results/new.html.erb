@@ -1,0 +1,32 @@
+<div id="log"></div>
+
+<div class="sentence-box">
+  <div class="sentence-text" id="sentence">
+    sentence
+  </div>
+  <div class="count" id="count">
+    count
+  </div>
+  <div class="answer-count" id="answer">
+    <%=form_with model: @result, local: true do |f|%>
+      <select name="answer_count", class="select">
+        <option>answer</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <%= f.submit class: 'submit' %>
+    <% end %>
+  </div>
+</div>
+
+<div class="next-btn" id="next">
+  NEXT
+</div>
+
+<div class="start-btn" id="start">
+  START
+</div>
+

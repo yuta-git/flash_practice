@@ -1,0 +1,53 @@
+#log{
+  text-align: center;
+  border: 1px solid;
+}
+
+.sentence-box{
+  height: 100px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sentence-text{
+  text-align: center;
+  line-height: 100px;
+}
+
+.count{
+  line-height: 100px;
+  position: absolute;
+  right: 120px;
+}
+
+/* .answer-count{
+  line-height: 100px;
+} */
+
+.select{
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  width: 100px;
+  height: 25px;
+}
+
+.submit{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.next-btn{
+  text-align: center;
+  border: 1px solid;
+  height: 100px;
+}
+
+.start-btn{
+  text-align: center;
+  border: 1px solid;
+  height: 100px;
+}
