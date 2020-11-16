@@ -1,4 +1,6 @@
 class ResultsController < ApplicationController
+  before_action :authenticate_user!, only: [:new]
+  
   def new
     @result = Result.new
   end
@@ -16,7 +18,7 @@ class ResultsController < ApplicationController
 
   private
   def result_params
-    params.permit(:answer_count)
+    params.permit(:answer_count).merge(user_id: current_user.id)
   end
 
 end
