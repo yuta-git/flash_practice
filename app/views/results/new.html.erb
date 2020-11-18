@@ -1,33 +1,46 @@
-<div id="log"></div>
-
-<div class="sentence-box">
-  <div class="sentence-text" id="sentence">
-    sentence
+<div class="wrapper">
+  <div class="timer-area">
+    <div id="log">
+      STARTを押すとタイマーが始まります！
+    </div>
   </div>
-  <div class="count" id="count">
-    count
+  
+  <div class="sentence-area">
+    <div class="sentence-box" id="sentence">
+      <div class="sentence-text">
+        NEXTを押すと問題が表示されます
+      </div>
+    </div>
+    <div class="sentence-area-right">
+      <div class="next-count" id="count">
+        出題数：０
+      </div>
+      <div class="pass-count" id="pass-count">
+       パス数：０
+      </div>
+      <div class="answer-count-area">
+        <div class="answer-count" id="answer">
+          <%= form_with model: [@category, @result], local: true do |f| %>
+            <%= f.text_field :answer_count, class: "select-count", placeholder: "回答数" %>
+            <%= f.submit "保存", class: 'submit' %>
+          <% end %>
+        </div>
+      </div>
+    </div>  
   </div>
-  <div class="answer-count" id="answer">
-    <%=form_with model: @result, local: true do |f|%>
-      <select name="answer_count", class="select">
-        <option>answer</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-      <%= f.submit class: 'submit' %>
-    <% end %>
+
+  <div class="sentence-bottom">
+    <div class="pass-btn" id="pass">
+      PASS
+    </div>
+    <div class="next-btn" id="next" data-id=<%= @category.id %>>
+      NEXT
+    </div>
+    <div class="start-btn" id="start">
+      START
+    </div>
   </div>
-</div>
 
-<div class="next-btn" id="next">
-  NEXT
-</div>
-
-<div class="start-btn" id="start">
-  START
 </div>
 
 

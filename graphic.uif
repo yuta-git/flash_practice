@@ -1,22 +1,19 @@
 [top_describe_app]
 descriptions/index
 --
-click SignIn
-==> SignIn
+click Sentences
+==> sentences
 
-[SignIn]
---
-submit
-==> mypage
+
 
 [put_questions]
-results/news
+results/new
 --
 click result
 ==> mypage
 
 [sentences]
-sentences/news
+categories/show
 --
 click put_questions
 ==> put_questions
@@ -25,7 +22,6 @@ click put_questions
 users/show
 --
 click index_result
-==>index_result
 
-[index_result]
-results/index
+
+

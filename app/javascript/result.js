@@ -1,29 +1,56 @@
 function result() {
   let countValue = 0;
+  let passCountValue = 0;
   const nextButton = document.getElementById("next")
+  const passButton = document.getElementById("pass")
+  // NEXTボタンを押した時の処理
   nextButton.addEventListener('click', () => {
+    const categoryId = nextButton.getAttribute("data-id");
     const XHR = new XMLHttpRequest();
-    XHR.open("GET", "/results", true);
+    XHR.open("GET", `/categories/${categoryId}/checked`, true);
     XHR.responseType = "json";
     XHR.send();
     XHR.onload = () => {
       let item = XHR.response.post;
+      console.log(item)
       const list = document.getElementById("sentence");
-      
       list.innerHTML = "";
         const HTML = `
           <div class="article">
-            ${ item.japanese }
+            ${ item.attributes.japanese }
           </div>`;
         list.insertAdjacentHTML("afterbegin", HTML);
     };
-
+    // NEXTのクリック数を表示
     const countDisplay = document.getElementById("count");
     countValue += 1;
-    countDisplay.innerHTML = countValue;
-
+    countDisplay.innerHTML = `出題数：${countValue}`;
+  });
+  // PASSボタンを押した時の処理
+  passButton.addEventListener('click', () => {
+    const categoryId = nextButton.getAttribute("data-id");
+    const XHR = new XMLHttpRequest();
+    XHR.open("GET", `/categories/${categoryId}/checked`, true);
+    XHR.responseType = "json";
+    XHR.send();
+    XHR.onload = () => {
+      let item = XHR.response.post;
+      console.log(item)
+      const list = document.getElementById("sentence");
+      list.innerHTML = "";
+        const HTML = `
+          <div class="article">
+            ${ item.attributes.japanese }
+          </div>`;
+        list.insertAdjacentHTML("afterbegin", HTML);
+    };
+    // PASSのクリック数を表示
+    const passCountDisplay = document.getElementById("pass-count");
+    passCountValue += 1;
+    passCountDisplay.innerHTML = `パス数：${passCountValue}`;
   });
 
+  // タイマー機能
   const startButton = document.getElementById("start");
   startButton.addEventListener('click', () => {
 
