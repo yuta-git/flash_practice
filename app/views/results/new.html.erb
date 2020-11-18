@@ -18,14 +18,13 @@
       <div class="pass-count" id="pass-count">
        パス数：０
       </div>
-      <div class="answer-count-area">
-        <div class="answer-count" id="answer">
-          <%= form_with model: [@category, @result], local: true do |f| %>
-            <%= f.text_field :answer_count, class: "select-count", placeholder: "回答数" %>
-            <%= f.submit "保存", class: 'submit' %>
-          <% end %>
+      <%= form_with model: [@category, @result], local: true do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
+        <div class="answer-count-area">
+          <%= f.text_field :answer_count, class: "select-count", placeholder: "回答数" %>
+          <%= f.submit "保存", class: 'submit' %>
         </div>
-      </div>
+      <% end %>
     </div>  
   </div>
 

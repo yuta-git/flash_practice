@@ -1,14 +1,19 @@
 class ResultsController < ApplicationController
   before_action :authenticate_user!, only: [:new]
-  
+  before_action :set_category, only: [:new, :create]
+
   def new
     @result = Result.new
-    @category = Category.find(params[:category_id])
+    
   end
 
   def create
-    Result.create(result_params)
-    redirect_to root_path
+    @result = Result.new(result_params)
+    if @result.save
+      redirect_to root_path
+    else
+      render action: :new
+    end
   end
 
 
@@ -16,5 +21,7 @@ class ResultsController < ApplicationController
   def result_params
     params.require(:result).permit(:answer_count).merge(user_id: current_user.id)
   end
-
+  def set_category
+    @category = Category.find(params[:category_id])
+  end
 end
