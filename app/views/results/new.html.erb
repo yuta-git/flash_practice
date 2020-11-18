@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <div class="timer-area">
+    <div id="log">
+      STARTを押すとタイマーが始まります！
+    </div>
+  </div>
+  
+  <div class="sentence-area">
+    <div class="sentence-box" id="sentence">
+      <div class="sentence-text">
+        NEXTを押すと問題が表示されます
+      </div>
+    </div>
+    <div class="sentence-area-right">
+      <div class="next-count" id="count">
+        出題数：０
+      </div>
+      <div class="pass-count" id="pass-count">
+       パス数：０
+      </div>
+      <%= form_with model: [@category, @result], local: true do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
+        <div class="answer-count-area">
+          <%= f.text_field :answer_count, class: "select-count", placeholder: "回答数" %>
+          <%= f.submit "保存", class: 'submit' %>
+        </div>
+      <% end %>
+    </div>  
+  </div>
+
+  <div class="sentence-bottom">
+    <div class="pass-btn" id="pass">
+      PASS
+    </div>
+    <div class="next-btn" id="next" data-id=<%= @category.id %>>
+      NEXT
+    </div>
+    <div class="start-btn" id="start">
+      START
+    </div>
+  </div>
+
+</div>
+
+

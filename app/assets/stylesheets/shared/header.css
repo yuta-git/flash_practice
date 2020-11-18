@@ -1,0 +1,32 @@
+.header{
+  height: 10vh;
+   background-color: #F4F5F7;
+  position: relative;
+  line-height: 10vh;
+  text-decoration: none;
+}
+.header a{
+  text-decoration: none;
+}
+.title{
+  position: absolute;
+  left: 20px;
+  font-size: 3rem;
+  color: black;
+}
+.header-right a{
+  color: black;
+  font-size: 2rem;
+}
+.mypage{
+  position: absolute;
+  right: 400px;
+}
+.sentences-btn{
+  position: absolute;
+  right: 200px;
+}
+.logout{
+  position: absolute;
+  right: 20px;
+}

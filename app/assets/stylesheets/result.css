@@ -1,0 +1,92 @@
+.wrapper{
+  height: 85vh;
+  background-color: #F4F5F7;
+}
+.timer-area{
+  height: 15vh;
+  color: lightpink;
+  font-size: 6rem;
+  line-height: 15vh;
+}
+#log{
+  text-align: center;
+}
+.sentence-area{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sentence-box{
+  height: 42vh;
+  width: 70%;
+  font-size: 7rem;
+  background-color: white;
+}
+.sentence-text{
+  word-wrap: break-word;
+}
+.sentence-area-right{
+  height: 42vh;
+  margin-left: 50px;
+}
+.next-count{
+  height: 14vh;
+  line-height: 14vh;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.pass-count{
+  height: 14vh;
+  line-height: 14vh;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.answer-count-area{
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.select-count{
+  height: 50px;
+  width: 97px;
+  font-size: 3rem;
+  text-align: center;
+}
+.submit{
+  font-size: 2rem;
+  height: 50px;
+}
+.sentence-bottom{
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pass-btn{
+  font-size: 4.5rem;
+  height: 10vh;
+  width: 20%;
+  border: 1px solid;
+  line-height: 10vh;
+}
+.next-btn{
+  font-size: 4.5rem;
+  height: 10vh;
+  width: 20%;
+  border: 1px solid;
+  line-height: 10vh;
+  margin-left: 20px;
+}
+
+.start-btn{
+  font-size: 3rem;
+  height: 10vh;
+  width: 10%;
+  border: 1px solid;
+  line-height: 10vh;
+  margin-left: 20px;
+}

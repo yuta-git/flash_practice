@@ -16,20 +16,34 @@
 
 |Column            |Type      |Options                     |
 |------------------|----------|----------------------------|
-|answer            |integer   |null:false                  |
+|answer_count      |integer   |null:false                  |
 |user_id           |references|null:false, foreign_key:true|
 
 ### Association
 -belongs_to :user
 
 
-## sentences テーブル
+## sentences テーブル(ActiveHash)
 
 |Column            |Type     |Options   |
 |------------------|---------|----------|
 |english           |text     |null:false|
 |japanese          |text     |null:false|
-|phrase            |integer  |null:false|
+|category_id       |integer  |null:false|
+
+### Association
+-belongs_to :category
+
+
+## categories テーブル(ActiveHash)
+
+|Column            |Type     |Options   |
+|------------------|---------|----------|
+|name              |string   |null:false|
+
+### Association
+-has_many :sentences
+
 
 
 ## descriptions テーブル
