@@ -1,5 +1,29 @@
-<%= link_to "#{@category.name}の問題に挑戦する", new_category_result_path(@category) %>
-<% @sentences.each do |sentence| %>
-  <%= simple_format(sentence.japanese) %>
-  <%= simple_format(sentence.english) %>
-<% end %>
+<div class="sentence-wrapper">
+  <div class="sentence-header">
+    <div class="sentence-title">
+      <%= @category.name %>の英文・日本語訳一覧
+    </div>
+    <div class="sentence-link">
+      <%= link_to "#{@category.name}の問題に挑戦する", new_category_result_path(@category) %>
+    </div>
+  </div>
+
+  <div class="sentence-main">
+      <div class="japanese-area">
+        <% @sentences.each do |sentence| %>
+         <span class="number"><%= sentence.id %></span>
+         <div class="japanese-text">
+             <%= sentence.japanese %>
+          </div>
+        <% end %>
+      </div>
+      <div class="english-area">
+        <% @sentences.each do |sentence| %>
+          <span class="number"><%= sentence.id %></span>
+          <div class="english-text">
+            <%= simple_format(sentence.english) %>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>
