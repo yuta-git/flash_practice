@@ -190,16 +190,16 @@ class Sentence < ActiveHash::Base
       { id: 188, english: "She refused to put her signature on the contract.", japanese: "彼女は契約書に署名することを拒みました。", category_id: 3 },
       { id: 189, english: "Put away your toys.", japanese: "おもちゃを片付けなさい。", category_id: 3 },
       { id: 190, english: "I couldn't put away my doubts.", japanese: "私は疑念を捨て去ることができなかった。", category_id: 3 },
-      { id: 191, english: "", japanese: "", category_id: 3 },
-      { id: 192, english: "", japanese: "", category_id: 3 },
-      { id: 193, english: "", japanese: "", category_id: 3 },
-      { id: 194, english: "", japanese: "", category_id: 3 },
-      { id: 195, english: "", japanese: "", category_id: 3 },
-      { id: 196, english: "", japanese: "", category_id: 3 },
-      { id: 197, english: "", japanese: "", category_id: 3 },
-      { id: 198, english: "", japanese: "", category_id: 3 },
-      { id: 199, english: "", japanese: "", category_id: 3 },
-      { id: 200, english: "", japanese: "", category_id: 3 },
+      { id: 191, english: "She sang a lullaby to put her baby to sleep.", japanese: "彼女は赤ちゃんを寝かしつけるために子守唄を歌いました。", category_id: 3 },
+      { id: 192, english: "The vet put the sick dog to sleep.", japanese: "獣医はその病気の犬を安楽死させました。", category_id: 3 },
+      { id: 193, english: "The police officer told the man to put up his hands.", japanese: "警官はその男に手をあげるように言いました。", category_id: 3 },
+      { id: 194, english: "The enemy will put up a white flag soon.", japanese: "敵は間も無く白旗を挙げるでしょう。", category_id: 3 },
+      { id: 195, english: "They put up a fence around the land.", japanese: "彼らはその土地の周りに柵を立てました。", category_id: 3 },
+      { id: 196, english: "The party put him up for the presidency.", japanese: "その党は彼女を大統領として候補に立てました。", category_id: 3 },
+      { id: 197, english: "That man put down his bag on the floor.", japanese: "あの男は床にカバンを下ろしました。", category_id: 3 },
+      { id: 198, english: "I put down a $50,000 deposit on the house.", japanese: "私は家に5万ドルの手付金を払いました。", category_id: 3 },
+      { id: 199, english: "Mr.Sato quickly put down her phone number.", japanese: "佐藤さんは彼女の電話番号を素早く書き留めました。", category_id: 3 },
+      { id: 200, english: "He really likes putting down people.", japanese: "彼は人をこき下ろすのが本当に好きです。", category_id: 3 },
       { id: 201, english: "", japanese: "", category_id: 3 },
       { id: 202, english: "", japanese: "", category_id: 3 },
       { id: 203, english: "", japanese: "", category_id: 3 },
@@ -220,9 +220,20 @@ class Sentence < ActiveHash::Base
       { id: 218, english: "", japanese: "", category_id: 3 },
       { id: 219, english: "", japanese: "", category_id: 3 },
       { id: 220, english: "", japanese: "", category_id: 3 },
+      { id: 221, english: "", japanese: "", category_id: 3 },
+      { id: 222, english: "", japanese: "", category_id: 3 },
+      { id: 223, english: "", japanese: "", category_id: 3 },
+      { id: 224, english: "", japanese: "", category_id: 3 },
+      { id: 225, english: "", japanese: "", category_id: 3 },
+      { id: 226, english: "", japanese: "", category_id: 3 },
+      { id: 227, english: "", japanese: "", category_id: 3 },
+      { id: 228, english: "", japanese: "", category_id: 3 },
+      { id: 229, english: "", japanese: "", category_id: 3 },
+      { id: 230, english: "", japanese: "", category_id: 3 },
       
     ]
 
+  
   include ActiveHash::Associations
   belongs_to :category
 

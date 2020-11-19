@@ -39,7 +39,7 @@ function result() {
       const list = document.getElementById("sentence");
       list.innerHTML = "";
         const HTML = `
-          <div class="article">
+          <div class="sentence-text">
             ${ item.attributes.japanese }
           </div>`;
         list.insertAdjacentHTML("afterbegin", HTML);

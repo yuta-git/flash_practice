@@ -1,0 +1,50 @@
+.sentence-wrapper{
+  height: auto;
+  min-height: 85vh;
+  background-color: #F4F5F7;
+  
+}
+.sentence-header{
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  padding-top: 20px;
+}
+.sentence-link a{
+  font-size: 3rem;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.sentence-title{
+  font-size: 4rem;
+}
+.sentence-main{
+  font-size: 3rem;
+  display: flex;
+  margin-top: 50px;
+}
+.japanese-area{
+  padding-left: 30px;
+}
+.japanese-text{
+  height: 120px;
+  color: #444444;
+}
+.english-area{
+  padding: 0 30px;
+  color: #444444;
+}
+.english-text{
+  height: 120px;
+}
+.number{
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  width: 75px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #888888;
+  color: #fff;
+}

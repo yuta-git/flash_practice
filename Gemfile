@@ -64,6 +64,8 @@ group :development do
 end
 
 gem 'active_hash'
+gem 'kaminari'
+gem 'active_hash-kaminari'
 
 group :production do
   gem 'rails_12factor'

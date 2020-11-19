@@ -22,25 +22,33 @@
   width: 70%;
   font-size: 7rem;
   background-color: white;
+  border-radius: 15px;
+  padding: 15px;
 }
 .sentence-text{
   word-wrap: break-word;
+  color: #444444;
 }
 .sentence-area-right{
   height: 42vh;
   margin-left: 50px;
+}
+#sentence{
+  color: #444444;
 }
 .next-count{
   height: 14vh;
   line-height: 14vh;
   font-size: 3.5rem;
   text-align: center;
+  color: lightskyblue;
 }
 .pass-count{
   height: 14vh;
   line-height: 14vh;
   font-size: 3.5rem;
   text-align: center;
+  color: lightslategrey;
 }
 .answer-count-area{
   height: 14vh;
@@ -72,6 +80,9 @@
   width: 20%;
   border: 1px solid;
   line-height: 10vh;
+  border-radius: 8px;
+  color: #fff;
+  background-color: lightgrey;
 }
 .next-btn{
   font-size: 4.5rem;
@@ -80,6 +91,9 @@
   border: 1px solid;
   line-height: 10vh;
   margin-left: 20px;
+  background-color: lightskyblue;
+  color: #fff;
+  border-radius: 8px;
 }
 
 .start-btn{
@@ -89,4 +103,7 @@
   border: 1px solid;
   line-height: 10vh;
   margin-left: 20px;
+  border-radius: 8px;
+  background-color: lightpink;
+  color: #fff;
 }
