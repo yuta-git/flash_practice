@@ -13,7 +13,7 @@
     <div class="header">
       <%= link_to 'Flash Practice', "#", class: "title"%>
       <div class="header-right">
-        <%= link_to 'MyPage', "#", class: "mypage"%>
+        <%= link_to 'MyPage', user_path(current_user), class: "mypage"%>
         <%= link_to 'Sentences', "#", class: "sentences-btn"%>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout" %>
       </div>
