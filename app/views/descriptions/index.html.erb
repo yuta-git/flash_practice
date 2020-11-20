@@ -1,14 +1,26 @@
-<div class="wrapper">
-  <ul class="show-lists hidden" id="pull-down">
-    <li><%= link_to "phrase1", "/categories/1", class: "category" %></li>
-    <li><%= link_to "phrase2", "/categories/2", class: "category" %></li>
-    <li><%= link_to "phrase3", "/categories/3", class: "category" %></li>
-    <li><%= link_to "phrase4", "/categories/4", class: "category" %></li>
-    <li><%= link_to "phrase5", "/categories/5", class: "category" %></li>
-    <li><%= link_to "phrase6", "/categories/6", class: "category" %></li>
-    <li><%= link_to "phrase7", "/categories/7", class: "category" %></li>
-    <li><%= link_to "phrase8", "/categories/8", class: "category" %></li>
-    <li><%= link_to "phrase9", "/categories/9", class: "category" %></li>
-    <li><%= link_to "phrase10", "/categories/10", class: "category" %></li>
-  </ul>
+<div class="top-wrapper">
+  <div class="top-header">
+    <div class="top-header-left">
+      <p>英語が話せるようになるには</p>
+      <p>瞬間英会話がおすすめ！</p>
+    </div>
+    <div class="top-header-right">
+      <div class="top-header-right-title">Sentencesから英文一覧画面へ！ ⬆︎</div>
+      <div class="test-title">（テストに挑戦するには、ログインが必要です）</div>
+    </div>
+  </div>
+  <div class="top-main">
+    <div class="top-main-left">
+      <div class="top-main-title">英文一覧画面で学習しましょう！</div>
+      <%= image_tag 'sentences.png', alt: "sentences画面です", class: "mypage-img" %>
+    </div>
+    <div class="top-main-middle">
+      <div class="top-main-title">ランダムで問題が出題されます！</div>
+      <%= image_tag 'test-sentences.png', alt: "test画面です", class: "mypage-img" %>
+    </div>
+    <div class="top-main-right">
+      <div class="top-main-title">テスト結果が一覧で見れる！</div>
+      <%= image_tag 'mypage.png', alt: "mypage画面です", class: "mypage-img" %>
+    </div>
+  </div>
 </div>

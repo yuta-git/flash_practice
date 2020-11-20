@@ -13,9 +13,14 @@
   font-size: 3rem;
   margin-left: 20px;
   text-decoration: none;
+  color: lightpink;
+}
+.sentence-link a:hover{
+  background-color: #fff;
 }
 .sentence-title{
   font-size: 4rem;
+  color: #444444;
 }
 .sentence-main{
   font-size: 3rem;
