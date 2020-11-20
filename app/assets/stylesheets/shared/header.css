@@ -1,32 +1,63 @@
 .header{
   height: 10vh;
-   background-color: #F4F5F7;
+  background-color: #F4F5F7;
   position: relative;
-  line-height: 10vh;
   text-decoration: none;
 }
 .header a{
   text-decoration: none;
+  color: #333333;
 }
 .title{
   position: absolute;
   left: 20px;
   font-size: 3rem;
-  color: black;
+  line-height: 10vh;
+  color: #333333;
 }
 .header-right a{
-  color: black;
+  color: #333333;
   font-size: 2rem;
 }
 .mypage{
+  line-height: 10vh;
   position: absolute;
-  right: 400px;
+  right: 420px;
 }
 .sign-in-btn{
+  line-height: 10vh;
   position: absolute;
-  right: 200px;
+  right: 220px;
 }
-/* .logout-btn{
+.sign-in-btn:hover{
+  background-color: #fff;
+}
+.sentences-btn{
+  line-height: 10vh;
   position: absolute;
-  right: 20px;
-} */
+  right: 40px;
+  font-size: 2rem;
+  color: #333333;
+}
+.show-lists{
+  position: absolute;
+  right: 40px;
+  top: 55px;
+  z-index: 1;
+  background-color: #F4F5F7;
+}
+.category {
+  text-decoration: none;
+  display: block;
+  padding-left: 10px;
+  margin-top: 3px;
+}
+.category:hover{
+  background-color: #fff;
+}
+.hidden{
+  display: none;
+}
+
+
+
