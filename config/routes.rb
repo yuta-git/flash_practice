@@ -8,6 +8,6 @@ Rails.application.routes.draw do
       get 'checked'
     end
   end
-
+  resources :descriptions, only: [:index]
   resources :users, only: :show
 end

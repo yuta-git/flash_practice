@@ -11,11 +11,14 @@
 
   <body>
     <div class="header">
-      <%= link_to 'Flash Practice', "#", class: "title"%>
+      <%= link_to 'Flash Practice', root_path, class: "title"%>
       <div class="header-right">
-        <%= link_to 'MyPage', user_path(current_user), class: "mypage"%>
-        <%= link_to 'Sentences', "#", class: "sentences-btn"%>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout" %>
+      <% if user_signed_in? %>
+        <%= link_to 'MyPage', user_path(current_user), class: "mypage" %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "sign-in-btn" %>
+      <% else %>  
+        <%= link_to "ログイン", new_user_session_path, class: "sign-in-btn" %>
+      <% end %>  
       </div>
     </div>
     <%= yield %>

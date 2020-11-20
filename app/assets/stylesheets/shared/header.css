@@ -22,11 +22,11 @@
   position: absolute;
   right: 400px;
 }
-.sentences-btn{
+.sign-in-btn{
   position: absolute;
   right: 200px;
 }
-.logout{
+/* .logout-btn{
   position: absolute;
   right: 20px;
-}
+} */
