@@ -5,11 +5,11 @@ num = 0
 sentences.each do |sentence|
   phrases << sentence
 end
-while num < 10 do
+while num < 10
   @phrase = phrases.sample
   puts @phrase
-  puts "あ"
+  puts 'あ'
   puts num
-  phrases.delete(@phrase) 
+  phrases.delete(@phrase)
   num += 1
 end

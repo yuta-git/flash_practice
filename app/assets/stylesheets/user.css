@@ -1,0 +1,92 @@
+.user-wrapper{
+  width: 100%;
+  height: auto;
+  min-height: 85vh;
+  background-color: #F4F5F7;
+  display: flex;
+  color: #444444;
+}
+.user-left{
+  width: 60%;
+}
+.user-left-title{
+  font-size: 4rem;
+  text-align: center;
+  height: 7vh;
+}
+.user-box-area{
+  height: auto;
+  min-height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.user-box{
+  background-color: #fff;
+  border-radius: 10px;
+  width: 30%;
+  height: 25vh;
+  margin: 10px 0 0 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.user-box-left{
+  width: 50%;
+}
+.result-date{
+  height: calc(25vh / 2);
+  display: block;
+  font-size: 2rem;
+}
+.result-phrase{
+  height: calc(25vh / 2);
+  display: block;
+  font-size: 3rem;
+}
+.user-box-right{
+  width: 50%;
+}
+.delete-answer-count{
+  height: calc(25vh / 2);
+  display: block;
+  font-size: 2rem;
+  margin-left: 60px;
+}
+.result-answer-count{
+  height: calc(25vh / 2);
+  display: block;
+  font-size: 3rem;
+  margin-left: 30px;
+  text-align: center;
+}
+.user-right{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  text-align: center;
+}
+.user-right-title{
+  height: 7vh;
+  font-size: 4rem;
+}
+.user-right-phrase-area{
+  font-size: 3rem;
+}
+.user-right-phrase{
+  height: 7vh;
+  margin-top: 10px;
+}
+.user-right-best-area{
+  font-size: 3rem;
+}
+.user-right-best{
+  height: 7vh;
+  margin-top: 10px;
+}
+.user-right-average-area{
+  font-size: 3rem;
+}
+.user-right-average{
+  height: 7vh;
+  margin-top: 10px;
+}

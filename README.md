@@ -18,9 +18,11 @@
 |------------------|----------|----------------------------|
 |answer_count      |integer   |null:false                  |
 |user_id           |references|null:false, foreign_key:true|
+|category_id       |references|null:false, foreign_key:true|
 
 ### Association
 -belongs_to :user
+-belongs_to :category
 
 
 ## sentences テーブル(ActiveHash)
@@ -43,7 +45,7 @@
 
 ### Association
 -has_many :sentences
-
+-has_many :results
 
 
 ## descriptions テーブル

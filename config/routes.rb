@@ -3,13 +3,11 @@ Rails.application.routes.draw do
   root to: "descriptions#index"
 
   resources :categories, only: [:show] do
-    resources :results, only: [:new, :create]
+    resources :results, only: [:new, :create, :destroy]
     member do
       get 'checked'
     end
   end
 
-
   resources :users, only: :show
-
 end
