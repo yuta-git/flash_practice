@@ -1,6 +1,7 @@
 function result() {
   let countValue = 0;
   let passCountValue = 0;
+  let totalCountValue = 0;
   const nextButton = document.getElementById("next")
   const passButton = document.getElementById("pass")
   // NEXTボタンを押した時の処理
@@ -25,6 +26,10 @@ function result() {
     const countDisplay = document.getElementById("count");
     countValue += 1;
     countDisplay.innerHTML = `出題数：${countValue}`;
+    //結果数にプラスカウント
+    const totalCountDisplay = document.getElementById("total-count");
+    totalCountValue += 1;
+    totalCountDisplay.innerHTML = `結果：${totalCountValue}`;
   });
   // PASSボタンを押した時の処理
   passButton.addEventListener('click', () => {
@@ -48,6 +53,10 @@ function result() {
     const passCountDisplay = document.getElementById("pass-count");
     passCountValue += 1;
     passCountDisplay.innerHTML = `パス数：${passCountValue}`;
+    // 結果数にマイナスカウント
+    const totalCountDisplay = document.getElementById("total-count");
+    totalCountValue -= 1;
+    totalCountDisplay.innerHTML = `結果：${totalCountValue}`
   });
 
   // タイマー機能

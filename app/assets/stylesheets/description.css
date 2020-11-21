@@ -15,15 +15,14 @@
 }
 .top-header-right{
   width: 50%;
-  text-align: right;
 }
 .top-header-right-title{
   font-size: 3rem;
-  padding-right: 70px;
+  padding-left: 60px;
 }
 .test-title{
   font-size: 2rem;
-  padding: 5px 130px 0 0;
+  padding: 5px 0 0 80px;
 }
 .top-main{
   height: 60vh;

@@ -11,9 +11,9 @@
   <div class="sentence-main">
       <div class="japanese-area">
         <% @sentences.each do |sentence| %>
-         <span class="number"><%= sentence.id %></span>
-         <div class="japanese-text">
-             <%= sentence.japanese %>
+          <span class="number"><%= sentence.id %></span>
+          <div class="japanese-text">
+              <%= sentence.japanese %>
           </div>
         <% end %>
       </div>
@@ -21,7 +21,7 @@
         <% @sentences.each do |sentence| %>
           <span class="number"><%= sentence.id %></span>
           <div class="english-text">
-            <%= simple_format(sentence.english) %>
+            <%= sentence.english %>
           </div>
         <% end %>
       </div>

@@ -5,22 +5,22 @@
     </div>
     <div class="user-box-area">
       <% @results.each do |result| %>
-      <div class="user-box">
-        <div class="user-box-left">
-          <div class="result-date">
-            <%= l result.created_at %>
+        <div class="user-box">
+          <div class="user-box-left">
+            <div class="result-date">
+              <%= l result.created_at %>
+            </div>
+            <div class="result-phrase">
+              <%= result.category.name %>：
+            </div>
           </div>
-          <div class="result-phrase">
-            <%= result.category.name %>：
+          <div class="user-box-right">
+            <%= link_to "削除", category_result_path(result.id), method: :delete, class: "delete-answer-count"%>
+            <div class="result-answer-count">
+              <%= result.answer_count %><span class="times">times</span>
+            </div>
           </div>
         </div>
-        <div class="user-box-right">
-          <%= link_to "削除", category_result_path(result.id), method: :delete, class: "delete-answer-count"%>
-          <div class="result-answer-count">
-            <%= result.answer_count %>文
-          </div>
-        </div>
-      </div>
       <% end %>
     </div>
   </div>
@@ -46,37 +46,37 @@
     <div class="user-right-best-area">
       <div class="user-right-title">Best</div>
       <% if @results.where(category_id: 1).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 1).maximum(:answer_count) %>文</div>
+        <div class="user-right-best"><%= @results.where(category_id: 1).maximum(:answer_count) %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 2).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 2).maximum(:answer_count) %>文</div>
+        <div class="user-right-best"><%= @results.where(category_id: 2).maximum(:answer_count) %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 3).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 3).maximum(:answer_count) %>文</div>
+        <div class="user-right-best"><%= @results.where(category_id: 3).maximum(:answer_count) %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 4).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 4).maximum(:answer_count) %>文</div>
+        <div class="user-right-best"><%= @results.where(category_id: 4).maximum(:answer_count) %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 5).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 5).maximum(:answer_count) %>文</div>
+        <div class="user-right-best"><%= @results.where(category_id: 5).maximum(:answer_count) %><span class="times">times</span></div>
       <% end %>
     </div>
     <div class="user-right-average-area">
       <div class="user-right-title">Average</div>
       <% if @results.where(category_id: 1).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 1).average(:answer_count).round %>文</div>
+        <div class="user-right-average"><%= @results.where(category_id: 1).average(:answer_count).round %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 2).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 2).average(:answer_count).round %>文</div>
+        <div class="user-right-average"><%= @results.where(category_id: 2).average(:answer_count).round %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 3).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 3).average(:answer_count).round %>文</div>
+        <div class="user-right-average"><%= @results.where(category_id: 3).average(:answer_count).round %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 4).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 4).average(:answer_count).round %>文</div>
+        <div class="user-right-average"><%= @results.where(category_id: 4).average(:answer_count).round %><span class="times">times</span></div>
       <% end %>
       <% if @results.where(category_id: 5).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 5).average(:answer_count).round %>文</div>
+        <div class="user-right-average"><%= @results.where(category_id: 5).average(:answer_count).round %><span class="times">times</span></div>
       <% end %>
     </div>
   </div>

@@ -66,6 +66,7 @@ end
 gem 'active_hash'
 gem 'kaminari'
 gem 'active_hash-kaminari'
+gem 'rails-i18n'
 
 group :production do
   gem 'rails_12factor'

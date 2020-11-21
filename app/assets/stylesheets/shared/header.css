@@ -12,10 +12,15 @@
 }
 .title{
   position: absolute;
-  left: 20px;
+  left: 200px;
   font-size: 3rem;
   line-height: 10vh;
   color: #333333;
+  transition: 1.0s ;
+}
+.title:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .header-right a{
   color: #333333;
@@ -24,26 +29,38 @@
 .mypage{
   line-height: 10vh;
   position: absolute;
-  right: 420px;
+  right: 400px;
+  transition: 1.0s ;
+}
+.mypage:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .sign-in-btn{
   line-height: 10vh;
   position: absolute;
-  right: 220px;
+  right: 200px;
+  transition: 1.0s ;
 }
 .sign-in-btn:hover{
-  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .sentences-btn{
   line-height: 10vh;
   position: absolute;
-  right: 40px;
+  right: 600px;
   font-size: 2rem;
   color: #333333;
+  transition: 1.0s ;
+}
+.sentences-btn:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .show-lists{
   position: absolute;
-  right: 40px;
+  right: 600px;
   top: 55px;
   z-index: 1;
   background-color: #F4F5F7;
@@ -53,9 +70,11 @@
   display: block;
   padding-left: 10px;
   margin-top: 3px;
+  transition: 1.0s ;
 }
 .category:hover{
-  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .hidden{
   display: none;

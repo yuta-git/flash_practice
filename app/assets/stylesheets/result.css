@@ -24,6 +24,7 @@
   background-color: white;
   border-radius: 15px;
   padding: 15px;
+  border: 5px inset;
 }
 .sentence-text{
   word-wrap: break-word;
@@ -50,29 +51,20 @@
   text-align: center;
   color: lightslategrey;
 }
-.answer-count-area{
+.total-count{
   height: 14vh;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  line-height: 14vh;
+  font-size: 3.5rem;
+  text-align: right;
+  color: lightslategrey;
 }
 
-.select-count{
-  height: 50px;
-  width: 97px;
-  font-size: 3rem;
-  text-align: center;
-}
-.submit{
-  font-size: 2rem;
-  height: 50px;
-}
 .sentence-bottom{
   height: 20vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 200px;
 }
 .pass-btn{
   font-size: 4.5rem;
@@ -83,6 +75,11 @@
   border-radius: 8px;
   color: #fff;
   background-color: lightgrey;
+  transition: 1.0s ;
+}
+.pass-btn:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .next-btn{
   font-size: 4.5rem;
@@ -94,8 +91,12 @@
   background-color: lightskyblue;
   color: #fff;
   border-radius: 8px;
+  transition: 1.0s ;
 }
-
+.next-btn:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
+}
 .start-btn{
   font-size: 3rem;
   height: 10vh;
@@ -106,4 +107,31 @@
   border-radius: 8px;
   background-color: lightpink;
   color: #fff;
+  transition: 1.0s ;
+}
+.start-btn:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
+}
+.answer-count-area{
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  background-color: lightblue;
+}
+
+.select-count{
+  height: 50px;
+  width: 97px;
+  font-size: 3rem;
+  text-align: center;
+}
+.submit{
+  font-size: 2rem;
+  height: 50px;
+  transition: 1.0s ;
+}
+.submit:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
 }

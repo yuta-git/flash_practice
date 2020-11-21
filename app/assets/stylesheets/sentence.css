@@ -2,25 +2,30 @@
   height: auto;
   min-height: 85vh;
   background-color: #F4F5F7;
+  color: #444444;
 }
 .sentence-header{
-  display: flex;
-  justify-content: center;
-  height: 10vh;
+  /* display: flex;
+  justify-content: center; 
+  height: 10vh; */
   padding-top: 20px;
+  text-align: center;
 }
 .sentence-link a{
   font-size: 3rem;
-  margin-left: 20px;
   text-decoration: none;
   color: lightpink;
+  display: block;
+  margin: 20px auto 0;
+  width: 30%;
+  transition: 1.0s ;
 }
 .sentence-link a:hover{
-  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.5 ;
 }
 .sentence-title{
   font-size: 4rem;
-  color: #444444;
 }
 .sentence-main{
   font-size: 3rem;
@@ -28,18 +33,22 @@
   margin-top: 50px;
 }
 .japanese-area{
-  padding-left: 30px;
+  padding-left: 100px;
 }
 .japanese-text{
   height: 120px;
-  color: #444444;
+  background-color: #fff;
+  border: 5px inset;
+  margin-bottom: 10px;
 }
 .english-area{
   padding: 0 30px;
-  color: #444444;
 }
 .english-text{
   height: 120px;
+  background-color: #fff;
+  border: 5px inset;
+  margin-bottom: 10px;
 }
 .number{
   display: inline-block;

@@ -8,8 +8,9 @@ class ResultsController < ApplicationController
 
   def create
     @result = Result.new(result_params)
-    if @result.save
-      redirect_to root_path
+    if @result.valid?
+      @result.save
+      redirect_to user_path(current_user)
     else
       render action: :new
     end
@@ -22,7 +23,6 @@ class ResultsController < ApplicationController
   end
 
   private
-
   def result_params
     params.require(:result).permit(:answer_count).merge(user_id: current_user.id, category_id: params[:category_id])
   end

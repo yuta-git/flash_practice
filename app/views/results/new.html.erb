@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="timer-area">
     <div id="log">
-      STARTを押すとタイマーが始まります！
+      STARTを押すと1分タイマーが始まります！
     </div>
   </div>
   
@@ -18,13 +18,9 @@
       <div class="pass-count" id="pass-count">
        パス数：０
       </div>
-      <%= form_with model: [@category, @result], local: true do |f| %>
-        <%= render 'shared/error_messages', model: f.object %>
-        <div class="answer-count-area">
-          <%= f.text_field :answer_count, class: "select-count", placeholder: "回答数" %>
-          <%= f.submit "保存", class: 'submit' %>
-        </div>
-      <% end %>
+      <div class="total-count" id="total-count">
+       結果：０
+      </div>
     </div>  
   </div>
 
@@ -38,6 +34,13 @@
     <div class="start-btn" id="start">
       START
     </div>
+    <%= form_with model: [@category, @result], local: true do |f| %>
+        <%= render 'shared/error_messages', model: f.object %>
+        <div class="answer-count-area">
+          <%= f.text_field :answer_count, class: "select-count", placeholder: "回答数" %>
+          <%= f.submit "保存", class: 'submit' %>
+        </div>
+      <% end %>
   </div>
 
 </div>
