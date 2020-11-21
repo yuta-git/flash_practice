@@ -299,7 +299,7 @@ class Sentence < ActiveHash::Base
     { id: 297, english: '', japanese: '', category_id: 4 },
     { id: 298, english: '', japanese: '', category_id: 4 },
     { id: 299, english: '', japanese: '', category_id: 4 },
-    { id: 300, english: '', japanese: '', category_id: 4 },
+    { id: 300, english: '', japanese: '', category_id: 4 }
 
   ]
 

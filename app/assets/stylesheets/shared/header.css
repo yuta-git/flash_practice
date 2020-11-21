@@ -1,8 +1,10 @@
 .header{
   height: 10vh;
   background-color: #F4F5F7;
+  /* background-color: #fff; */
   position: relative;
   text-decoration: none;
+  border-bottom: 5px inset;
 }
 .header a{
   text-decoration: none;
