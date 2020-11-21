@@ -40,6 +40,7 @@ html {
 body {
 	line-height: 1;
 	font-size: 1.4rem;
+	font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
 }
 
 ol, ul {
