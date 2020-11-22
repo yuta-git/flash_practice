@@ -62,3 +62,51 @@
   margin: 0 10px;
   border-radius: 20px;
 }
+
+@media (max-width: 599px) {
+  .top-wrapper{
+    height: auto;
+    background-color: #F4F5F7;
+    color: #333333;
+  }
+  .top-header-left{
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .top-header-right-title{
+    font-size: 1.8rem;
+    padding-left: 0px;
+  }
+  .test-title{
+    font-size: 1.2rem;
+    padding: 5px 0 0 20px;
+  }
+  .top-main{
+    display: block;
+    height: auto;
+  }
+  .top-main-left{
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+  }
+  .top-main-middle{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+  }
+  .top-main-right{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .mypage-img{
+    width: 90%;
+    height: 50vh;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+}

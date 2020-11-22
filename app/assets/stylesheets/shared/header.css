@@ -82,3 +82,25 @@
 
 
 
+@media (max-width: 599px) {
+  .title{
+    left: 50px;
+    font-size: 2rem;
+  }
+  .mypage{
+    right: 150px;
+  }
+  .sign-in-btn{
+    right: 50px;
+  }
+  .sentences-btn{
+    line-height: 10vh;
+    position: absolute;
+    right: 250px;
+    font-size: 2rem;
+  }
+
+}
+
+
+
