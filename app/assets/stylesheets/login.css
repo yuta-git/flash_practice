@@ -55,3 +55,12 @@
   bottom: 30px;
   margin-top: 5vh;
 }
+input[type=email]{
+  font-size: 2rem;
+}
+input[type=text]{
+  font-size: 2rem;
+}
+input[type=password]{
+  font-size: 2rem;
+}

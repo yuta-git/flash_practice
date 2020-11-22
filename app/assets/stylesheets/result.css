@@ -106,10 +106,27 @@
   margin-left: 20px;
   border-radius: 8px;
   background-color: lightpink;
-  color: #fff;
+  color: white;
   transition: 1.0s ;
 }
 .start-btn:hover{
+  cursor: pointer;
+  opacity: 0.5 ;
+}
+.reset-btn{
+  font-size: 3rem;
+  height: 10vh;
+  width: 10%;
+  border: 1px solid;
+  line-height: 10vh;
+  margin-left: 20px;
+  border-radius: 8px;
+  background-color: lightgreen;
+  color: white;
+  transition: 1.0s ;
+  display: none;
+}
+.reset-btn:hover{
   cursor: pointer;
   opacity: 0.5 ;
 }
@@ -123,7 +140,7 @@
 .select-count{
   height: 50px;
   width: 97px;
-  font-size: 3rem;
+  /* font-size: 3rem; */
   text-align: center;
 }
 .submit{
@@ -134,4 +151,7 @@
 .submit:hover{
   cursor: pointer;
   opacity: 0.5 ;
+}
+#result_answer_count{
+  font-size: 3rem;
 }

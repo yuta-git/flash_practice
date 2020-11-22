@@ -27,56 +27,56 @@
   <div class="user-right">
     <div class="user-right-phrase-area">
       <div class="user-right-title">Phrase</div>
-      <% if @results.where(category_id: 1).present? %>
+      <% if current_user.result_first? %>
         <div class="user-right-phrase">Phrase1</div>
       <% end %>
-      <% if @results.where(category_id: 2).present? %>
+      <% if current_user.result_second? %>
         <div class="user-right-phrase">Phrase2</div>
       <% end %>
-      <% if @results.where(category_id: 3).present? %>
+      <% if current_user.result_third? %>
         <div class="user-right-phrase">Phrase3</div>
       <% end %>
-      <% if @results.where(category_id: 4).present? %>
+      <% if current_user.result_fourth? %>
         <div class="user-right-phrase">Phrase4</div>
       <% end %>
-      <% if @results.where(category_id: 5).present? %>
+      <% if current_user.result_fifth? %>
         <div class="user-right-phrase">Phrase5</div>
       <% end %>
     </div>
     <div class="user-right-best-area">
       <div class="user-right-title">Best</div>
-      <% if @results.where(category_id: 1).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 1).maximum(:answer_count) %><span class="times">times</span></div>
+      <% if current_user.result_first? %>
+        <div class="user-right-best"><%= current_user.result_maxmum_first %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 2).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 2).maximum(:answer_count) %><span class="times">times</span></div>
+      <% if current_user.result_second? %>
+        <div class="user-right-best"><%= current_user.result_maxmum_second %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 3).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 3).maximum(:answer_count) %><span class="times">times</span></div>
+      <% if current_user.result_third? %>
+        <div class="user-right-best"><%= current_user.result_maxmum_third %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 4).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 4).maximum(:answer_count) %><span class="times">times</span></div>
+      <% if current_user.result_fourth? %>
+        <div class="user-right-best"><%= current_user.result_maxmum_fourth %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 5).present? %>
-        <div class="user-right-best"><%= @results.where(category_id: 5).maximum(:answer_count) %><span class="times">times</span></div>
+      <% if current_user.result_fifth? %>
+        <div class="user-right-best"><%= current_user.result_maxmum_fifth %><span class="times">times</span></div>
       <% end %>
     </div>
     <div class="user-right-average-area">
       <div class="user-right-title">Average</div>
-      <% if @results.where(category_id: 1).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 1).average(:answer_count).round %><span class="times">times</span></div>
+      <% if current_user.result_first? %>
+        <div class="user-right-average"><%= current_user.result_average_first %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 2).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 2).average(:answer_count).round %><span class="times">times</span></div>
+      <% if current_user.result_second? %>
+        <div class="user-right-average"><%= current_user.result_average_second %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 3).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 3).average(:answer_count).round %><span class="times">times</span></div>
+      <% if current_user.result_third? %>
+        <div class="user-right-average"><%= current_user.result_average_third %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 4).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 4).average(:answer_count).round %><span class="times">times</span></div>
+      <% if current_user.result_fourth? %>
+        <div class="user-right-average"><%= current_user.result_average_fourth %><span class="times">times</span></div>
       <% end %>
-      <% if @results.where(category_id: 5).present? %>
-        <div class="user-right-average"><%= @results.where(category_id: 5).average(:answer_count).round %><span class="times">times</span></div>
+      <% if current_user.result_fifth? %>
+        <div class="user-right-average"><%= current_user.result_average_fifth %><span class="times">times</span></div>
       <% end %>
     </div>
   </div>
