@@ -73,6 +73,7 @@
   text-align: center;
   background-color: #fff;
   margin-right: 20px;
+  height: 90vh;
 }
 .user-right-title{
   height: 7vh;
@@ -108,4 +109,102 @@
   height: 7vh;
   margin-top: 10px;
   border-bottom: 5px groove;
+}
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .result-date{
+    font-size: 1.5rem;
+  }
+  .result-phrase{
+    font-size: 2.2rem;
+  }
+  .delete-answer-count{
+    font-size: 1.5rem;
+  }
+  .result-answer-count{
+    font-size: 2.2rem;
+  }
+  .user-right-title{
+    font-size: 2.7rem;
+  }
+  .user-right-phrase-area{
+    font-size: 2.5rem;
+  }
+  .user-right-best-area{
+    font-size: 2.5rem;
+  }
+  .user-right-average-area{
+    font-size: 2.5rem;
+  }
+  .user-box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    height: 25vh;
+    margin: 10px 0 0 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .user-left{
+    width: 55%;
+  }
+  .user-left-title{
+    font-size: 3rem;
+  } 
+  .user-box{
+    width: 40%;
+    height: 20vh; 
+  }
+  .user-box-left{
+    width: 50%;
+  }
+  .result-date{
+    height: calc(20vh / 2);
+    font-size: 1rem;
+  }
+  .result-phrase{
+    height: calc(20vh / 2);
+    font-size: 1.8rem;
+  }
+  .delete-answer-count{
+    height: calc(20vh / 2);
+    font-size: 1rem;
+    margin-left: 50px;
+  }
+  .result-answer-count{
+    height: calc(20vh / 2);
+    font-size: 1.8rem;
+  }
+  .times{
+    font-size: 1rem;
+  }
+  .user-right{
+    margin-right: 30px;
+    height: 93vh;
+  }
+  .user-right-title{
+    line-height: 7vh;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .user-right-phrase-area{
+    font-size: 1.8rem;
+  }
+  .user-right-best-area{
+    font-size: 1.8rem;
+  }
+  .user-right-average-area{
+    font-size: 1.8rem;
+  }
+
+
+
 }

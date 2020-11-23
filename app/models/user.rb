@@ -54,6 +54,21 @@ class User < ApplicationRecord
   def result_average_fifth
     self.results.where(category_id: 5).average(:answer_count).round
   end
+  def result_average_sixth
+    self.results.where(category_id: 6).average(:answer_count).round
+  end
+  def result_average_seventh
+    self.results.where(category_id: 7).average(:answer_count).round
+  end
+  def result_average_eighth
+    self.results.where(category_id: 8).average(:answer_count).round
+  end
+  def result_average_nineth
+    self.results.where(category_id: 9).average(:answer_count).round
+  end
+  def result_average_tenth
+    self.results.where(category_id: 10).average(:answer_count).round
+  end
 
   def result_maxmum_first
     self.results.where(category_id: 1).maximum(:answer_count)
@@ -69,5 +84,20 @@ class User < ApplicationRecord
   end
   def result_maxmum_fifth
     self.results.where(category_id: 5).maximum(:answer_count)
+  end
+  def result_maxmum_sixth
+    self.results.where(category_id: 6).maximum(:answer_count)
+  end
+  def result_maxmum_seventh
+    self.results.where(category_id: 7).maximum(:answer_count)
+  end
+  def result_maxmum_eighth
+    self.results.where(category_id: 8).maximum(:answer_count)
+  end
+  def result_maxmum_nineth
+    self.results.where(category_id: 9).maximum(:answer_count)
+  end
+  def result_maxmum_tenth
+    self.results.where(category_id: 10).maximum(:answer_count)
   end
 end

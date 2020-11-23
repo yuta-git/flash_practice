@@ -155,3 +155,83 @@
 #result_answer_count{
   font-size: 3rem;
 }
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .sentence-bottom{
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .pass-btn{
+    font-size: 3rem;
+  }
+  .next-btn{
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+  .start-btn{
+    font-size: 2.2rem;
+    margin-left: 10px;
+  }
+  .reset-btn{
+    font-size: 2.2rem;
+    margin-left: 10px;
+  }
+
+}
+
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .timer-area{
+    font-size: 2.7rem;
+  }
+  .sentence-box{
+    font-size: 3rem;
+  }
+  .sentence-area-right{
+    margin-left: 5px;
+  }
+  .next-count{
+    font-size: 1.8rem;
+  }
+  .pass-count{
+    font-size: 1.8rem;
+  }
+  .total-count{
+    font-size: 1.8rem;
+  }
+  .sentence-bottom{
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .pass-btn{
+    font-size: 2.5rem;
+  }
+  .next-btn{
+    font-size: 2.5rem;
+    margin-left: 10px;
+  }
+  .start-btn{
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+  .reset-btn{
+    font-size: 1.6rem;
+    margin-left: 10px;
+  }
+  .submit{
+    font-size: 1.5rem;
+    height: 50px;
+  }
+  .select-count{
+    height: 50px;
+    width: 60px;
+    text-align: center;
+  }
+  #result_answer_count{
+    font-size: 1.6rem;
+  }
+  
+
+}
