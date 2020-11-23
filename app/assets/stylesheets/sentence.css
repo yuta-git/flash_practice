@@ -62,14 +62,17 @@
   color: #fff;
 }
 
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .sentence-link a{
+    width: 70%;
+  }
+}
 
+
+/* スマホ表示時 */
 @media (max-width: 599px) {
   .sentence-link a{
-    font-size: 3rem;
-    text-decoration: none;
-    color: lightpink;
-    display: block;
-    margin: 20px auto 0;
     width: 70%;
   }
   .sentence-main{

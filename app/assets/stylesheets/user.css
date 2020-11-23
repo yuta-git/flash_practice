@@ -111,7 +111,47 @@
   border-bottom: 5px groove;
 }
 
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .result-date{
+    font-size: 1.5rem;
+  }
+  .result-phrase{
+    font-size: 2.2rem;
+  }
+  .delete-answer-count{
+    font-size: 1.5rem;
+  }
+  .result-answer-count{
+    font-size: 2.2rem;
+  }
+  .user-right-title{
+    font-size: 2.7rem;
+  }
+  .user-right-phrase-area{
+    font-size: 2.5rem;
+  }
+  .user-right-best-area{
+    font-size: 2.5rem;
+  }
+  .user-right-average-area{
+    font-size: 2.5rem;
+  }
+  .user-box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    height: 25vh;
+    margin: 10px 0 0 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
 
+
+}
+
+/* スマホ表示時 */
 @media (max-width: 599px) {
   .user-left{
     width: 55%;

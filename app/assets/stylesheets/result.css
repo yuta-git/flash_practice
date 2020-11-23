@@ -156,8 +156,32 @@
   font-size: 3rem;
 }
 
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .sentence-bottom{
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .pass-btn{
+    font-size: 3rem;
+  }
+  .next-btn{
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+  .start-btn{
+    font-size: 2.2rem;
+    margin-left: 10px;
+  }
+  .reset-btn{
+    font-size: 2.2rem;
+    margin-left: 10px;
+  }
+
+}
 
 
+/* スマホ表示時 */
 @media (max-width: 599px) {
   .timer-area{
     font-size: 2.7rem;

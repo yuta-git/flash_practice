@@ -69,23 +69,25 @@ input[type=password]{
 }
 
 
-@media (max-width: 599px) {
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .login-btn-box{
+    font-size: 2.5rem;
+  }
+  .reset-btn-box{
+    font-size: 2rem;
+  }
+}
 
+/* スマホ表示時 */
+@media (max-width: 599px) {
   .email-area{
     height: 12vh;
   }
   .login-btn-box{
-    width: 100%;
-    height: 5vh;
     font-size: 2.5rem;
   }
   .reset-btn-box{
-    width: 100%;
-    height: 5vh;
     font-size: 1.4rem;
-    background-color: #555555;
-    color: #fff;
   }
-
-
 }
