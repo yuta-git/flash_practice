@@ -13,19 +13,20 @@ RSpec.describe Result, type: :model do
     it 'answer_countが空では保存できないこと' do
       @result.answer_count = nil
       @result.valid?
-      expect(@result.errors.full_messages).to include("Answer count can't be blank")
+      expect(@result.errors.full_messages).to include("回答数を入力してください")
     end
 
     it 'anwer_countが半角数字以外では保存できないこと' do
       @result.answer_count = '３０'
       @result.valid?
-      expect(@result.errors.full_messages).to include('Answer count need to be half-width numbers.')
+      expect(@result.errors.full_messages).to include("回答数は半角数字で入力してください")
     end
 
     it 'userが紐付いていないと保存できないこと' do
       @result.user = nil
       @result.valid?
-      expect(@result.errors.full_messages).to include('User must exist')
+      expect(@result.errors.full_messages).to include('Userを入力してください')
     end
+
   end
 end

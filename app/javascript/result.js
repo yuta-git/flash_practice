@@ -29,7 +29,7 @@ function result() {
     //結果数にプラスカウント
     const totalCountDisplay = document.getElementById("total-count");
     totalCountValue += 1;
-    totalCountDisplay.innerHTML = `結果：${totalCountValue}`;
+    totalCountDisplay.innerHTML = `回答数：${totalCountValue}`;
   });
   // PASSボタンを押した時の処理
   passButton.addEventListener('click', () => {
@@ -56,7 +56,7 @@ function result() {
     // 結果数にマイナスカウント
     const totalCountDisplay = document.getElementById("total-count");
     totalCountValue -= 1;
-    totalCountDisplay.innerHTML = `結果：${totalCountValue}`
+    totalCountDisplay.innerHTML = `回答数：${totalCountValue}`
   });
 
   // タイマー機能
@@ -92,7 +92,6 @@ function result() {
   resetButton.addEventListener('click', () => {
     location.reload();
   });
-
 
 }
 

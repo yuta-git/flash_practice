@@ -6,37 +6,13 @@
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <div class="header">
-      <%= link_to 'Flash Practice', root_path, class: "title"%>
-      <div class="header-right">
-        <% if user_signed_in? %>
-          <%= link_to 'Mypage', user_path(current_user), class: "mypage" %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "sign-in-btn" %>
-        <% else %>  
-          <%= link_to "Login", new_user_session_path, class: "sign-in-btn" %>
-        <% end %> 
-          <div class="sentences-btn" id="lists">Sentences</div>
-            <ul class="show-lists hidden" id="pull-down">
-              <li><%= link_to "phrase1", "/categories/1", class: "category" %></li>
-              <li><%= link_to "phrase2", "/categories/2", class: "category" %></li>
-              <li><%= link_to "phrase3", "/categories/3", class: "category" %></li>
-              <li><%= link_to "phrase4", "/categories/4", class: "category" %></li>
-              <li><%= link_to "phrase5", "/categories/5", class: "category" %></li>
-              <li><%= link_to "phrase6", "/categories/6", class: "category" %></li>
-              <li><%= link_to "phrase7", "/categories/7", class: "category" %></li>
-              <li><%= link_to "phrase8", "/categories/8", class: "category" %></li>
-              <li><%= link_to "phrase9", "/categories/9", class: "category" %></li>
-              <li><%= link_to "phrase10", "/categories/10", class: "category" %></li>
-            </ul> 
-      </div>
-    </div>
+    <%= render "shared/header" %>
     <%= yield %>
-    <div class="footer">
-    </div>
+    <%= render "shared/footer" %>
   </body>
 </html>

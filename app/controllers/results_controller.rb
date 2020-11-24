@@ -18,7 +18,7 @@ class ResultsController < ApplicationController
 
   def destroy
     result = Result.find(params[:category_id])
-    result.destroy
+    result.destroy 
     redirect_to controller: :users, action: :show
   end
 
