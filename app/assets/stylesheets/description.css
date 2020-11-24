@@ -63,7 +63,7 @@
 }
 .mypage-img{
   width: 95%;
-  height: 55vh;
+  height: 53vh;
   margin-top: 10px;
   border-radius: 20px;
 }
@@ -97,7 +97,7 @@
     font-size: 2.1rem;
   }
   .mypage-img{
-    width: 90%;
+    width: 95%;
     height: 53vh;
     margin-top: 10px;
     border-radius: 20px;
@@ -131,6 +131,10 @@
     display: block;
     height: auto;
   }
+  .top-main-title{
+    font-size: 2rem;
+    padding-top: 7px;
+  }
   .top-main-left{
     width: 100%;
     height: auto;
@@ -139,7 +143,7 @@
   .top-main-middle{
     width: 100%;
     height: auto;
-    margin: 30px auto;
+    margin: 10px auto;
   }
   .top-main-right{
     width: 100%;
@@ -147,8 +151,8 @@
     margin: 0 auto;
   }
   .mypage-img{
-    width: 90%;
+    width: 95%;
     height: 50vh;
-    margin-top: 10px;
+    margin-bottom: 5px;
   }
 }
