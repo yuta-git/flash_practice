@@ -11,8 +11,8 @@ Flash Practice
   マイページではテスト結果を一覧で確認することができるので、<br>
   日々の学習進捗を管理することができる仕様になっています。<br>
 
-## URL
-https://flash-practice.herokuapp.com/
+## IPアドレス
+54.248.202.159
 
 ## テスト用アカウント
 ### Basic認証のIDとパスワード

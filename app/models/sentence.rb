@@ -30,7 +30,7 @@ class Sentence < ActiveHash::Base
     { id: 28, english: 'The boxer got a punch on the chin and went down.', japanese: 'そのボクサーは顎にパンチを受けて倒れた。', category_id: 1 },
     { id: 29, english: "The mother tried to get a better look at her son's face.", japanese: 'その母親は息子の顔をもっとよく見ようとした。', category_id: 1 },
     { id: 30, english: "I have to get my wife's consent before getting the car.", japanese: 'その車を買う前に私は妻の同意をえらなければならない。', category_id: 1 },
-    { id: 31, english: "Since he didn't get the joke, he couldn't laugh.", japanese: 'そのジョークがわからなかっtので、彼は笑えなかった。', category_id: 1 },
+    { id: 31, english: "Since he didn't get the joke, he couldn't laugh.", japanese: 'そのジョークが分からなかったので、彼は笑えませんでした。', category_id: 1 },
     { id: 32, english: 'Why did you get the idea that she was in love with you?', japanese: '君はなぜ彼女が君に恋をしていると思ったんだい？', category_id: 1 },
     { id: 33, english: 'They will get us unless we get them first.', japanese: '彼らを先にやっつけないと私たちがやられてしまうぞ。', category_id: 1 },
     { id: 34, english: "I haven't gotten a raise for three years.", japanese: '私は三年間昇給していません。', category_id: 1 },
