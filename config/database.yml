@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: flash_practice_production
-  username: flash_practice
-  password: <%= ENV['FLASH_PRACTICE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
