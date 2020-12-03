@@ -74,7 +74,7 @@
   top: 55px;
   z-index: 1;
   background-color: #F4F5F7;
-  width: 15%;
+  width: 16%;
   border: 1px ;
   box-shadow:0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -83,7 +83,8 @@
   display: inline-block;
   padding-left: 10px;
   margin-top: 3px;
-  transition: 1.0s ;
+  transition: 1.0s;
+  padding-bottom: 5px;
 }
 .category:hover{
   cursor: pointer;
@@ -125,7 +126,7 @@
   .show-lists{
     right: 400px;
     top: 55px;
-    width: 21%;
+    width: 22%;
   }
 }
 
@@ -150,7 +151,7 @@
   .show-lists{
     right: 250px;
     top: 55px;
-    width: 36%;
+    width: 37%;
   }
 }
 

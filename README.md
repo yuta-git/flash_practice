@@ -11,8 +11,8 @@ Flash Practice
   マイページではテスト結果を一覧で確認することができるので、<br>
   日々の学習進捗を管理することができる仕様になっています。<br>
 
-## IPアドレス
-54.248.202.159
+## URL
+ec2-54-248-202-159.ap-northeast-1.compute.amazonaws.com
 
 ## テスト用アカウント
 ### Basic認証のIDとパスワード
@@ -74,6 +74,14 @@ Flash Practice
 
 ![](https://i.gyazo.com/02da7d3d39b7322d672faa549bd3bbe7.gif)
 
+### レスポンシブ対応
+スマートフォンサイズ、タブレットサイズで使用する時でも対応できるように各ページの画面を調節しました。
+
+- タブレットサイズ
+![](https://i.gyazo.com/5a49c2af42ac4054e775c649fc80454f.png)
+- スマートフォンサイズ
+![](https://i.gyazo.com/9844d94f2caacd3dd07a7cf6e378abd6.png)
+
 ## データベース設計
 ### ER図
 ![](https://i.gyazo.com/d495dd58cf353cbd5a7bac588a36e1ba.png)
@@ -89,7 +97,7 @@ Flash Practice
 - rbenv 1.1.2
 - ruby 2.6.5
 - Rails 6.0.3.4
-
+- MySQL 5.6.47
 
 
 

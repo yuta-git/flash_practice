@@ -20,7 +20,7 @@
 .sentence-box{
   height: 42vh;
   width: 70%;
-  font-size: 7rem;
+  font-size: 3.5rem;
   background-color: white;
   border-radius: 15px;
   padding: 15px;
@@ -30,12 +30,29 @@
   word-wrap: break-word;
   color: #444444;
 }
+.sentence-top{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.8rem;
+}
+.sentence-description{
+  font-weight: bold;
+}
+.music{
+  color: lightgreen;
+  width: 100%;
+  text-align: center;
+}
+.article{
+  font-size: 7rem;
+  color: #444444;
+}
+#sentence{
+  /* color: #444444; */
+}
 .sentence-area-right{
   height: 42vh;
   margin-left: 50px;
-}
-#sentence{
-  color: #444444;
 }
 .next-count{
   height: 14vh;
@@ -194,6 +211,24 @@
     font-size: 2.2rem;
     margin-left: 10px;
   }
+  .sentence-top{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8rem;
+  }
+  .sentence-description{
+    font-weight: bold;
+    font-size: 2.3rem;
+  }
+  .article{
+    font-size: 5rem;
+    color: #444444;
+  }
+  .music{
+    color: lightgreen;
+    font-size: 3.2rem;
+    text-align: center;
+  }
 }
 
 /* スマホ表示時 */
@@ -247,6 +282,23 @@
   #result_answer_count{
     font-size: 1.6rem;
   }
-  
+  .sentence-top{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+  }
+  .sentence-description{
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .article{
+    font-size: 3rem;
+    color: #444444;
+  }
+  .music{
+    color: lightgreen;
+    font-size: 2.5rem;
+    text-align: center;
+  }
 
 }

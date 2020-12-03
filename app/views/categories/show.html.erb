@@ -4,7 +4,8 @@
       <%= @category.name %>の英文・日本語訳一覧
     </div>
     <div class="sentence-link">
-      <%= link_to "#{@category.name}の問題に挑戦する！", new_category_result_path(@category) %>
+      <%= link_to "#{@category.name}の問題に挑戦する ", new_category_result_path(@category) %>
+      <%= link_to "", new_category_result_path(@category) , class:"fas fa-fw fa-exclamation faa-shake animated exclamation-mark" %>
     </div>
   </div>
 

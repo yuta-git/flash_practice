@@ -17,8 +17,15 @@
   color: lightpink;
   display: block;
   margin: 20px auto 0;
-  width: 30%;
+  /* width: 30%; */
   transition: 1.0s ;
+  display: inline-block;
+}
+.exclamation_mark::before{
+  color: lightpink;
+  font-family: "Font Awesome 5 Free","Font Awesome 5 Brands";
+  content: '\f12a';
+  display: inline-block;
 }
 .sentence-link a:hover{
   cursor: pointer;
@@ -65,7 +72,7 @@
 /* タブレット表示時 */
 @media (max-width: 1024px) {
   .sentence-link a{
-    width: 70%;
+    /* width: 70%; */
   }
 }
 
@@ -73,7 +80,7 @@
 /* スマホ表示時 */
 @media (max-width: 599px) {
   .sentence-link a{
-    width: 70%;
+    /* width: 70%; */
   }
   .sentence-main{
     font-size: 2.5rem;
