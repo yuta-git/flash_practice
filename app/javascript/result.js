@@ -13,7 +13,6 @@ function result() {
     XHR.send();
     XHR.onload = () => {
       let item = XHR.response.post;
-      console.log(item)
       const list = document.getElementById("sentence");
       list.innerHTML = "";
         const HTML = `

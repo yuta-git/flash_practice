@@ -12,7 +12,7 @@ Flash Practice
   日々の学習進捗を管理することができる仕様になっています。<br>
 
 ## URL
-ec2-54-248-202-159.ap-northeast-1.compute.amazonaws.com
+https://flash-practice.herokuapp.com/
 
 ## テスト用アカウント
 ### Basic認証のIDとパスワード
